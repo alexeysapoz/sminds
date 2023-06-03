@@ -28,4 +28,3 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: actions/upload-pages-artifact@v1.0.8
       with:
-        path: docs/
