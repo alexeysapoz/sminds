@@ -26,7 +26,6 @@ jobs:
       run: ./scripts/md2mindmap.sh
 
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+      uses: actions/upload-pages-artifact@v1.0.8
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs
+        path: docs/
